@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id":"https://raw.githubusercontent.com/2017fighting/bjw-s-charts/refs/tags/init/charts/library/common/values.schema.json",
+  "$id": "https://raw.githubusercontent.com/2017fighting/bjw-s-charts/refs/heads/main/charts/library/common/values.schema.json",
   "type": "object",
   "properties": {
     "global": {
