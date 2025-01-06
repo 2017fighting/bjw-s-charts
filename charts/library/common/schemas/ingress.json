@@ -49,8 +49,12 @@
   "hostEntry": {
     "additionalProperties": false,
     "properties": {
-      "host": {
+      "subDomain": {
         "type": "string"
+      },
+      "baseDomain":{
+        "type": "string",
+        "default": "heybox.top"
       },
       "paths": {
         "items": {
@@ -77,7 +81,7 @@
         "type": "array"
       }
     },
-    "required": ["host", "paths"]
+    "required": ["subDomain", "paths"]
   },
 
   "tlsEntry": {

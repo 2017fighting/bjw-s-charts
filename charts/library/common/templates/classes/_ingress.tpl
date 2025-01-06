@@ -54,7 +54,8 @@ spec:
   {{- else }}
   rules:
   {{- range $ingressObject.hosts }}
-    - host: {{ tpl .host $rootContext | quote }}
+    {{- $fullHost := printf "%s.%s" (tpl .subDomain $rootContext) (tpl .baseDomain $rootContext) }}
+    - host: {{ $fullHost | quote }}
       http:
         paths:
           {{- range .paths }}
