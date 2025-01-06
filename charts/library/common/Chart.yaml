@@ -8,15 +8,3 @@ kubeVersion: ">=1.22.0-0"
 keywords:
   - common
   - library
-home: https://github.com/bjw-s/helm-charts/tree/main/charts/library/common
-maintainers:
-  - name: bjw-s
-    email: me@bjw-s.dev
-annotations:
-  artifacthub.io/changes: |-
-    - kind: added
-      description: |-
-        Add hostUsers field to pod spec for k8s clusters >= 1.29
-    - kind: added
-      description: |-
-        Allow propagating global labels and annotations to Pod metadata
