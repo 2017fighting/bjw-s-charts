@@ -13,18 +13,7 @@ keywords:
   - limits
   - admission
   - controller
-maintainers:
-  - name: bjw-s
-    email: me@bjw-s.dev
 dependencies:
   - name: common
-    repository: https://bjw-s.github.io/helm-charts
+    repository: "file://../../library/common"
     version: 3.6.0
-annotations:
-  artifacthub.io/changes: |-
-    - kind: changed
-      description: |
-        Update common library to 3.6.0
-  artifacthub.io/links: |
-    - name: "source"
-      url: "https://github.com/bjw-s/k8s-ycl"
